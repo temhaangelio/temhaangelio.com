@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Layout(props) {
   return (
-    <main className="flex flex-col gap-8 max-w-3xl text-lg mx-auto p-5 md:p-0 dark:text-white">
+    <div className="flex flex-col gap-8 max-w-3xl text-lg mx-auto p-5 md:p-0 dark:text-white">
       <Meta
         siteTitle={props.siteTitle}
         siteDescription={props.siteDescription}
@@ -38,6 +38,6 @@ export default function Layout(props) {
           </svg>
         </Link>
       </section>
-    </main>
+    </div>
   );
 }
