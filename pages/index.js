@@ -1,13 +1,8 @@
 import Layout from "../components/Layout";
-import BlogList from "../components/BlogList";
 
 const Index = (props) => {
   return (
-    <Layout
-      pathname="/"
-      siteTitle={props.title}
-      siteDescription={props.description}
-    >
+    <Layout>
       <div className="flex flex-col gap-5">
         <p>
           Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki
