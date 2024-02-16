@@ -1,12 +1,10 @@
 import "../styles/globals.css";
-
+import { ThemeProvider } from "next-themes";
 function MyApp({ Component, pageProps }) {
   return (
-    <main
-      className={`flex flex-col h-screen bg-repeat bg-cover bg-center bg-[url('/bg-1.png')]`}
-    >
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </main>
+    </ThemeProvider>
   );
 }
 
