@@ -1,4 +1,3 @@
-import matter from "gray-matter";
 import Layout from "../components/Layout";
 import BlogList from "../components/BlogList";
 
@@ -9,40 +8,30 @@ const Index = (props) => {
       siteTitle={props.title}
       siteDescription={props.description}
     >
-      <section>
-        <BlogList allBlogs={props.allBlogs} />
-      </section>
+      <div className="flex flex-col gap-5">
+        <p>
+          Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki
+          yaygın görüşe meydan okuyarak, ben kendi yolculuğumda bu iki disiplini
+          birleştirme peşindeyim. Programlama bilgisiyle donanmış biri olarak,
+          tasarım ve resim yapma yeteneğimi sürekli geliştiriyorum.
+        </p>
+        <p>
+          Reklam ve yazılım sektörlerinde edindiğim çeşitli tecrübelerin
+          ardından, şu anda özel bir eğitim kurumda bilgi ve iletişim
+          teknolojileri alanında çalışmaktayım. Esas uzmanlık alanım programlama
+          olsa da, yaratıcı süreçlere olan tutkum beni tasarım dünyasına
+          çekiyor. Özellikle, tasarımlarımı oluştururken sadeliği benimsemiş
+          durumdayım; çünkü sadeliğin, karmaşıklığın içinde bir tür zarafet ve
+          netlik sunduğuna inanıyorum. Bence bu yaklaşım, hem estetik hem de
+          fonksiyonel açıdan kullanıcı dostu çözümler üretmemizi sağlıyor.
+        </p>
+        <p>
+          Teknoloji, tasarım ve çizim ile ilgili konuların sıkı bir takipçisiyim
+          bu konular üzerinde konuşmak için müsait günlerime bakabilirsin.
+        </p>
+      </div>
     </Layout>
   );
 };
 
 export default Index;
-export async function getStaticProps() {
-  const siteConfig = await import(`../data/config.json`);
-
-  const webpackContext = require.context("../posts", true, /\.md$/);
-  const keys = webpackContext.keys();
-  const values = keys.map(webpackContext);
-  const posts = keys.map((key, index) => {
-    const slug = key
-      .replace(/^.*[\\\/]/, "")
-      .split(".")
-      .slice(0, -1)
-      .join(".");
-    const value = values[index];
-    const document = matter(value.default);
-    return {
-      frontmatter: document.data,
-      markdownBody: document.content,
-      slug,
-    };
-  });
-
-  return {
-    props: {
-      allBlogs: posts,
-      title: siteConfig.default.title,
-      description: siteConfig.default.description,
-    },
-  };
-}

@@ -2,7 +2,6 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import React from "react";
-import Reklam from "./Reklam";
 
 function truncateSummary(content) {
   return content.slice(0, 160).trimEnd();
@@ -52,11 +51,6 @@ const BlogList = ({ allBlogs }) => {
                 </div>
               </Link>
             </li>
-            {index % 3 === 2 && ( // Her üç blog postundan sonra
-              <li key={`ad-${index}`}>
-                <Reklam />
-              </li>
-            )}
           </React.Fragment>
         ))}
     </ul>
