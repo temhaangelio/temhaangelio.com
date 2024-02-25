@@ -54,7 +54,6 @@ const Index = (props) => {
               className="rounded-xl"
               width={125}
               height={125}
-              target="_blank"
             />
             <div className="flex flex-col justify-between w-full">
               <h2 className="font-bold">Mydavet</h2>
@@ -68,7 +67,6 @@ const Index = (props) => {
           <Link
             href={"https://play.google.com/store/apps/details?id=com.ibanlist"}
             className="flex flex-row gap-5"
-            target="_blank"
           >
             <Image
               alt="ibanlist"
@@ -89,7 +87,6 @@ const Index = (props) => {
           <Link
             href={"https://play.google.com/store/apps/details?id=com.takvimapp"}
             className="flex flex-row gap-5"
-            target="_blank"
           >
             <Image
               alt="takvimapp"
