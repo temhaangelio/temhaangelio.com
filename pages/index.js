@@ -42,11 +42,32 @@ const Index = (props) => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-8 border-t border-gray-900">
+        <div className="flex flex-col gap-12 border-t border-gray-900">
           <h1 className="font-bold text-xl mb-5 mt-12">Son Projeler</h1>
           <Link
+            href={"https://www.mydavet.com"}
+            className="flex flex-row gap-5"
+          >
+            <Image
+              alt="mydavet"
+              src="/mydavet.png"
+              className="rounded-xl"
+              width={125}
+              height={125}
+              target="_blank"
+            />
+            <div className="flex flex-col justify-between w-full">
+              <h2 className="font-bold">Mydavet</h2>
+              <p>
+                Yüz yüze veya online gerçekleşecek etkinlikleriniz için hızlı ve
+                pratik bir şekilde web sayfanızı oluşturabilirsiniz.
+              </p>
+              <span className="text-sm">UI, React, Firebase</span>
+            </div>
+          </Link>
+          <Link
             href={"https://play.google.com/store/apps/details?id=com.ibanlist"}
-            className="flex flex-row gap-5 hover:text-zinc-400"
+            className="flex flex-row gap-5"
             target="_blank"
           >
             <Image
@@ -84,27 +105,6 @@ const Index = (props) => {
                 canlandırmaya çalışan ufakcık, tefecik bir uygulama.
               </p>
               <span className="text-sm">UI, React Native</span>
-            </div>
-          </Link>
-          <Link
-            href={"https://www.mydavet.com"}
-            className="flex flex-row gap-5"
-          >
-            <Image
-              alt="mydavet"
-              src="/mydavet.png"
-              className="rounded-xl"
-              width={125}
-              height={125}
-              target="_blank"
-            />
-            <div className="flex flex-col justify-between w-full">
-              <h2 className="font-bold">Mydavet</h2>
-              <p>
-                Yüz yüze veya online gerçekleşecek etkinlikleriniz için hızlı ve
-                pratik bir şekilde web sayfanızı oluşturabilirsiniz.
-              </p>
-              <span className="text-sm">UI, React, Firebase</span>
             </div>
           </Link>
         </div>
