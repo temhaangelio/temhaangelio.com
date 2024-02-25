@@ -98,7 +98,7 @@ const Index = (props) => {
             <div className="flex flex-col justify-between w-full">
               <h2 className="font-bold">TakvimApp</h2>
               <p>
-                Geleneksel Saatli Maarif Takvimi'nin ruhunu yeniden
+                Geleneksel Saatli Maarif Takvimi&apos;nin ruhunu yeniden
                 canlandırmaya çalışan ufakcık, tefecik bir uygulama.
               </p>
               <span className="text-sm">UI, React Native</span>
