@@ -24,7 +24,7 @@ export default function Layout(props) {
         <Image alt="temha angelio" src="/avatar.png" width="75" height="75" />
       </nav>
       <section>{props.children}</section>
-      <section className="flex flex-row justify-between mt-10 border-t border-zinc-900 py-10 gap-3">
+      <section className="flex flex-row justify-between mt-12 border-t border-zinc-900 py-10 gap-3">
         <div className="flex flex-row gap-3">
           <Link href="https://www.instagram.com/temhaangelio">
             <svg
