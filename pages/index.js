@@ -42,7 +42,7 @@ const Index = (props) => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-12 border-t border-gray-900">
+        <div className="flex flex-col gap-12 border-t border-t dark:border-zinc-900">
           <h1 className="font-bold text-xl mb-5 mt-12">Son Projeler</h1>
           <Link
             href={"https://www.mydavet.com"}
@@ -51,7 +51,7 @@ const Index = (props) => {
             <Image
               alt="mydavet"
               src="/mydavet.png"
-              className="rounded-xl"
+              className="rounded-xl w-28 h-28"
               width={125}
               height={125}
             />
@@ -71,7 +71,7 @@ const Index = (props) => {
             <Image
               alt="ibanlist"
               src="/ibanlist.png"
-              className="rounded-xl"
+              className="rounded-xl w-28 h-28"
               width={125}
               height={125}
             />
@@ -91,7 +91,7 @@ const Index = (props) => {
             <Image
               alt="takvimapp"
               src="/takvimapp.png"
-              className="rounded-xl"
+              className="rounded-xl w-28 h-28"
               width={125}
               height={125}
             />

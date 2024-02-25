@@ -1,25 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
 body {
-  color: #000000;
-}
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: #fff;
+  color: #000;
   font-family: "Nunito", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-}
-
-@layer base {
-  body {
-    @apply dark:bg-gray-800 bg-white;
-  }
+.dark body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
 }
