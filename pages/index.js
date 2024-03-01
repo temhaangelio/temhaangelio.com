@@ -17,6 +17,7 @@ const Index = (props) => {
     >
       <div className="flex flex-col gap-5 mt-5">
         <div className="flex flex-col gap-8 pb-12">
+          <p>Merhaba,</p>
           <p>
             Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki
             yaygın görüşe meydan okuyarak, ben kendi yolculuğumda bu iki
@@ -26,7 +27,7 @@ const Index = (props) => {
           </p>
           <p>
             Reklam ve yazılım sektörlerinde edindiğim çeşitli tecrübelerin
-            ardından, şu anda özel bir eğitim kurumda bilgi ve iletişim
+            ardından, şu anda özel bir eğitim kurumunda bilgi ve iletişim
             teknolojileri alanında çalışmaktayım. Esas uzmanlık alanım
             programlama olsa da, yaratıcı süreçlere olan tutkum beni tasarım
             dünyasına çekiyor. Özellikle, tasarımlarımı oluştururken sadeliği
@@ -37,9 +38,13 @@ const Index = (props) => {
           </p>
           <p>
             Teknoloji, tasarım ve çizim ile ilgili konuların sıkı bir
-            takipçisiyim bu konular üzerinde konuşmak için müsait günlerime
-            bakabilirsiniz.
+            takipçisiyim bu konular üzerinde konuşmak{" "}
+            <Link href="mailto:temhaangelio@gmail.com" className="font-bold">
+              temhaangelio@gmail.com
+            </Link>{" "}
+            adresini kullanabilirsiniz.
           </p>
+          <p>Sevgiler.</p>
         </div>
 
         <div className="flex flex-col gap-12 border-t border-t dark:border-zinc-900">
