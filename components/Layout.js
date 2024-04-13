@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import Head from "next/head";
-export default function Layout(props) {
+export default function Layout({ children, title, description }) {
   const { theme, setTheme } = useTheme();
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -13,8 +13,8 @@ export default function Layout(props) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>{props.siteTitle}</title>
-        <meta name="Description" content={props.description}></meta>
+        <title>{title}</title>
+        <meta name="Description" content={description}></meta>
         <script
           type="text/javascript"
           src="https://widgets.superpeer.com/widget.js"
@@ -47,7 +47,7 @@ export default function Layout(props) {
         <span className="text-3xl font-bold">temha angelio</span>
         <Image alt="temha angelio" src="/avatar.png" width="75" height="75" />
       </nav>
-      <section>{props.children}</section>
+      <section>{children}</section>
       <section className="flex flex-row justify-between mt-12 border-t dark:border-zinc-900 py-10 gap-3">
         <div className="flex flex-row gap-3">
           <Link href="https://www.instagram.com/temhaangelio">

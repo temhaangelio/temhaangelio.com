@@ -2,18 +2,14 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import Link from "next/link";
 
-export const metadata = {
-  title: "temhaangelio",
-  description:
-    "Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki  yaygın görüşe meydan okuyarak, ben kendi yolculuğumda bu iki disiplini birleştirme peşindeyim. Programlama bilgisiyle donanmış biri olarak, tasarım ve resim yapma yeteneğimi sürekli geliştiriyorum.",
-};
-
 const Index = (props) => {
   return (
     <Layout
+      title={"temha angelio"}
+      description={
+        "Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki yaygın görüşe meydan okuyarak, ben kendi yolculuğumda bu iki disiplini birleştirme peşindeyim. Programlama bilgisiyle donanmış biri olarak, tasarım ve resim yapma yeteneğimi sürekli geliştiriyorum."
+      }
       pathname="/"
-      siteTitle="temha angelio"
-      siteDescription="Programcıların aynı zamanda iyi tasarımcılar olamayacağı yönündeki yaygın görüşe meydan okuyarak, ben kendi yolculuğumda bu iki disiplini birleştirme peşindeyim. Programlama bilgisiyle donanmış biri olarak, tasarım ve resim yapma yeteneğimi sürekli geliştiriyorum."
     >
       <div className="flex flex-col gap-5 mt-5">
         <div className="flex flex-col gap-8 pb-12">
@@ -37,18 +33,52 @@ const Index = (props) => {
             üretmemizi sağlıyor.
           </p>
           <p>
-            Teknoloji, tasarım ve çizim ile ilgili konuların sıkı bir
-            takipçisiyim bu konular üzerinde konuşmak{" "}
-            <Link href="mailto:temhaangelio@gmail.com" className="font-bold">
+            Teknoloji, astronomi, teroik fizik, matematik, tasarım, çizim gibi
+            konuların sıkı bir takipçisiyim bu konular başta olmak üzere çeşitli
+            konularda{" "}
+            <Link
+              href="https://temha.medium.com"
+              className="font-bold underline"
+            >
+              temha.medium.com
+            </Link>{" "}
+            adresinden okuyabileceğiniz yazılar yazıyorum.
+          </p>
+          <p>
+            İletişim için ise{" "}
+            <Link
+              href="mailto:temhaangelio@gmail.com"
+              className="font-bold underline"
+            >
               temhaangelio@gmail.com
             </Link>{" "}
-            adresini kullanabilirsiniz.
+            adresini kullanabilirsiniz. İlginiz için teşekkür ederim.
           </p>
           <p>Sevgiler.</p>
         </div>
 
         <div className="flex flex-col gap-12 border-t border-t dark:border-zinc-900">
           <h1 className="font-bold text-xl mb-5 mt-12">Son Projeler</h1>
+          <Link
+            href={"https://www.dijitalmasallar.com"}
+            className="flex flex-row gap-5"
+          >
+            <Image
+              alt="dijitalmasallar"
+              src="/dijitalmasallar.png"
+              className="rounded-xl w-28 h-28"
+              width={125}
+              height={125}
+            />
+            <div className="flex flex-col justify-between w-full">
+              <h2 className="font-bold">Dijital Masallar</h2>
+              <p>
+                Analog insanlara teknoloji ve bilim yoğun dijital masallar
+                anlatıyoruz.
+              </p>
+              <span className="text-sm">UI, React, Firebase</span>
+            </div>
+          </Link>
           <Link
             href={"https://www.mydavet.com"}
             className="flex flex-row gap-5"
